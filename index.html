@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="assets/css/header.css"/>
+</head>
+<body class="body">
+    <header class="header">
+        <nav class="header__wrapper">
+            <div class="mobile-menu">
+                <a href="#offcanvas-1" data-uk-offcanvas="">
+                    <span></span><span></span><span></span>
+                </a>
+            </div>
+            <div class="uk-offcanvas" id="offcanvas-1">
+                <div class="uk-offcanvas-bar">
+                    <ul class="main-menu">
+                        <li class="main-menu__li"><a class="main-menu__link"  href="#personal" data-uk-smooth-scroll>Личная информация</a></li>
+                        <li class="main-menu__li"><a class="main-menu__link"  href="#experience" data-uk-smooth-scroll>Опыт</a></li>
+                        <li class="main-menu__li"><a class="main-menu__link"  href="#level-js" data-uk-smooth-scroll>JavaScript</a></li>
+                        <li class="main-menu__li"><a class="main-menu__link"  href="#about" data-uk-smooth-scroll>О себе</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <form class="wrapper" method="post" action="">
+            <h1 class="h1">Анкета</h1>
+            <section class="section personal-info" id="personal">
+                <h2 class="section-h2 section-h2__personal">Личная информация</h2>
+                <div class="personal-info__row">
+                    <input type="text" class="personal-info__input" placeholder="ФИО" value="Чирков Дмитрий Викторович">
+                </div>
+                <div class="custom-select personal-info__row personal-info__row--select">
+                    <select class="personal-info__select">
+                        <option>Год рождения</option>
+                        <option selected="selected" value="1976">1976</option>
+                        <option>1990</option>
+                        <option>2000</option>
+                        <option>2005</option>
+                    </select>
+                </div>
+                <div class="personal-info__row">
+                    <input type="text" class="personal-info__input" placeholder="Место проживания" value="г. Барнаул">
+                </div>
+                <div class="personal-info__row">
+                    <input type="text" class="personal-info__input" placeholder="Skype" value="de_mentiy">
+                </div>
+                <div class="personal-info__row">
+                    <input type="email" class="personal-info__input" placeholder="E-mail" value="chirkov56@yandex.ru">
+                </div>
+            </section>
+            <section class="section my-experience" id="experience">
+                <h2 class="section-h2 section-h2__experience">Расскажите о своем опыте</h2>
+                <div class="my-experience__row">
+                    <label class="my-experience__item custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" checked><span class="custom-checkbox__block"></span><span>БЭМ/OOCSS</span>
+                    </label>
+                    <label class="my-experience__item custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" checked><span class="custom-checkbox__block"></span><span>Верстаю семантично</span>
+                    </label>
+                    <label class="my-experience__item custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox"><span class="custom-checkbox__block"></span><span>Webpack</span>
+                    </label>
+                    <label class="my-experience__item custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" checked><span class="custom-checkbox__block"></span><span>Stylus/LESS/SASS</span>
+                    </label>
+                    <label class="my-experience__item custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox"><span class="custom-checkbox__block"></span><span>ES2015/ES2016</span>
+                    </label>
+                    <label class="my-experience__item custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" checked><span class="custom-checkbox__block"></span><span>jQuery</span>
+                    </label>
+                    <label class="my-experience__item custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" checked><span class="custom-checkbox__block"></span><span>Работаю с SVG</span>
+                    </label>
+                    <label class="my-experience__item custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" checked><span class="custom-checkbox__block"></span><span>Gulp/GRUNT</span>
+                    </label>
+                    <label class="my-experience__item custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" checked><span class="custom-checkbox__block"></span><span>Иcпользую Git</span>
+                    </label>
+                </div>
+            </section>
+            <section class="section level-js" id="level-js">
+                <h2 class="section-h2 section-h2__level-js">Уровень владения JavaScript</h2>
+                <div class="level-js__text">
+                    <p>Не владею</p>
+                    <p>Использую готовые<br>решения</p>
+                    <p>Использую готовые решения<br>и умею их переделывать</p>
+                    <p>Пишу сложный JS с нуля</p>
+                </div>
+                <div class="level-js__slider">
+                    <div id="slider2"></div>
+                </div>
+            </section>
+            <section class="section about" id="about">
+                <h2 class="section-h2 section-h2__about">Расскажите о себе</h2>
+                <p class="about__subtitle">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</p>
+                <textarea placeholder="Понравилась тем, что...">Понравилась условиями труда: полная занятость, удаленная работа, хорошая оплата.----------------------------- Условия роста для желающих. Хочется развиваться, причем в команде. Одному сложновато. Нужна обратная связь.------------------------------------И хочется уже заниматься интересными проектами. Задачи, над которыми работаю, нередко уже ничего, кроме скуки не вызывают: простенькие макеты, не над чем подумать.</textarea>
+            </section>
+            <button type="submit" class="submit">Готово</button>
+        </form>
+    </main>
+<link rel="stylesheet" href="assets/css/libs.css"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="assets/css/styles.css"/>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/libs.js"></script>
+<script src="assets/js/script.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</body>
+</html>
